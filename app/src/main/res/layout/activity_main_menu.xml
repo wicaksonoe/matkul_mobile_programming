@@ -5,36 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:background="#F2F2F6"
+    android:padding="40dp"
     android:gravity="center"
-    tools:context=".MainLogin">
+    tools:context=".MenuActivity">
 
     <TextView
         android:id="@+id/menuTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textAlignment="center"
         android:text="@string/main_menu_title"
+        android:textStyle="bold"
         android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/buttonProfile"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="15dp"
-        android:text="@string/btn_profile_text" />
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_profile_text"
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle" />
 
     <Button
         android:id="@+id/buttonSchedule"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="15dp"
-        android:text="@string/btn_schedule_text" />
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_schedule_text"
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle" />
 
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_logout_text" />
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_logout_text"
+        android:textColor="#FFF"
+        style="?android:attr/borderlessButtonStyle" />
 </LinearLayout>

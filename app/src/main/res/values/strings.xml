@@ -3,7 +3,7 @@
 
     <string name="welcome_title">Selamat Datang</string>
     <string name="welcome_subtitle">Silahkan Login Terlebih Dahulu</string>
-    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="text_login">Login</string>
 
@@ -13,10 +13,8 @@
     <string name="btn_logout_text">Keluar</string>
 
     <string name="profile_foto_desc">Foto Profile</string>
-    <string name="text_nama">: I Gede Agung Wicaksono Dharmayasa</string>
-    <string name="text_nim">: 18101080</string>
-    <string name="text_jurusan">: TI-MDI</string>
-    <string name="text_label_nama">Nama</string>
-    <string name="text_label_nim">NIM</string>
-    <string name="text_label_jurusan">Jurusan</string>
+    <string name="text_nama">I Gede Agung Wicaksono Dharmayasa</string>
+    <string name="text_nim">18101080\t\t|\t\tTI-MDI</string>
+    <string name="title_nama">Agung\nWicaksono</string>
+    <string name="text_dummy">He heard quiet steps behind him. That didn\'t bode well. Who could be following him this late at night and in this deadbeat part of town? And at this particular moment, just after he pulled off the big time and was making off with the greenbacks</string>
 </resources>
