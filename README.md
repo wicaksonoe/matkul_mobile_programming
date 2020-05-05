@@ -6,4 +6,4 @@ Buatlah Aplikasi Mobile Android dengan alur seperti pada Gambar 1, dengan spesif
 4. Menghitung luas & Keliling Bangun datar dapat dengan lingkaran,persegi panjang, trapesium, dan bangun datar lainya
 5. Menghitung volume bangun ruang dapat menggunakan kubus, balok, tabung, dan bangun ruang lainnya
 
-![peta activity](no.jpg)
+![peta activity](https://github.com/wicaksonoe/matkul_mobile_programming/blob/uts/peta_activity.png)
