@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".HitungSegitga">
+
+    <TextView
+        android:id="@+id/title_hitung_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/title_hitung_segitiga" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_alas"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_alas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/text_hint_alas" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_tinggi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/text_hint_tinggi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_segitiga_kll"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/text_kll"
+        android:onClick="hitung_keliling" />
+
+    <Button
+        android:id="@+id/button_segitiga_luas"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/text_luas"
+        android:onClick="hitung_luas" />
+
+    <TextView
+        android:id="@+id/segitiga_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/segitiga_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

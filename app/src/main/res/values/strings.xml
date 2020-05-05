@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Hitung Geometri</string>
+    <string name="title_login">UTS\nMobile Programming</string>
+    <string name="btn_login_text">Login</string>
+    <string name="btn_menu_lingkaran">Hitung\nBangun Lingkaran</string>
+    <string name="btn_menu_segitiga">Hitung\nBangun Segitiga Siku-siku</string>
+    <string name="btn_menu_kubus">Hitung\nBangun Kubus</string>
+    <string name="btn_logout">Logout</string>
+    <string name="title_hitung_segitiga">Hitung\nBangun Segitia Siku-siku</string>
+    <string name="text_kll">Hitung Keliling</string>
+    <string name="text_luas">Hitung Luas</string>
+    <string name="title_hitung_lingkaran">Hitung\nBangun Lingkaran</string>
+    <string name="title_hitung_kubus">Hitung\nBangun Kubus</string>
+    <string name="text_volume">Hitung Volume</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="text_input_rusuk">Masukan panjang rusuk</string>
+    <string name="text_hint_tinggi">Masukan panjang tinggi</string>
+    <string name="text_hint_alas">Masukan panjang alas</string>
 </resources>
