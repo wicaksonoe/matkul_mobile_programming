@@ -12,3 +12,4 @@
 
 ## Daftar Branch:
 1. tugas_1 (Membuat 4 activity dan berpindah dengan intent implicit, serta penggunaan Toast)
+2. UTS (Membuat program penghitung geometri bangun datar dan ruang)
