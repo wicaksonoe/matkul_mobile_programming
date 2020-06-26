@@ -21,10 +21,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logout(View view) {
-        Toast.makeText(getApplicationContext(), "Berhasil Logout", Toast.LENGTH_LONG).show();
+        SharedPreference sharedPreference = new SharedPreference();
 
+        final String username = sharedPreference.getValue(getApplicationContext(), "username");
+        Toast.makeText(getApplicationContext(), "Berhasil Logout\nSampai jumpa lagi " + username, Toast.LENGTH_LONG).show();
+
+        // TODO: clear all shared preferences
+        sharedPreference.clearSharedPreference(getApplicationContext());
+
+        // TODO: navigate to login activity
         Intent intentLogin = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intentLogin);
         finish();
+    }
+
+    public void navigateToFilm(View view) {
+        Intent intentDaftarFilm = new Intent(MainActivity.this, FilmDaftarActivity.class);
+        startActivity(intentDaftarFilm);
     }
 }

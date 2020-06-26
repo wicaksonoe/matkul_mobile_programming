@@ -43,6 +43,10 @@ public class LoginActivity extends AppCompatActivity {
         if (username.equals("18101080") && password.equals("18101080")) {
             Toast.makeText(getApplicationContext(), "LOGIN SUKSES", Toast.LENGTH_LONG).show();
 
+            // TODO: set shared preference
+            SharedPreference sharedPreference = new SharedPreference();
+            sharedPreference.save(getApplicationContext(), "username", username);
+
             // TODO: go to main menu
             Intent intentMainMenu = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intentMainMenu);
