@@ -116,6 +116,7 @@
         android:clipToPadding="false">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/btn_profile"
             android:layout_width="130dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"

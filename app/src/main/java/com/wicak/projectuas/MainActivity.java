@@ -12,7 +12,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    CardView btnManageSeat;
+    CardView btnManageSeat, btnProfile;
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -26,12 +26,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnManageSeat = findViewById(R.id.btn_manage_seat);
-
         btnManageSeat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentKelolaKursi = new Intent(MainActivity.this, KursiMainActivity.class);
                 startActivity(intentKelolaKursi);
+            }
+        });
+
+        btnProfile = findViewById(R.id.btn_profile);
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentProfile = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intentProfile);
             }
         });
     }
