@@ -3,8 +3,10 @@ package com.wicak.projectuas;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
@@ -32,9 +34,11 @@ public class FilmTambahActivity extends AppCompatActivity implements TimePickerD
     TextInputEditText inputTambahHarga;
 
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_film_tambah);
 
         getSupportActionBar().setTitle("Tambah Film Baru");

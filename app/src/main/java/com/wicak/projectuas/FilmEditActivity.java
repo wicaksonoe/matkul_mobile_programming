@@ -3,8 +3,10 @@ package com.wicak.projectuas;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.annotation.SuppressLint;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
@@ -38,9 +40,11 @@ public class FilmEditActivity extends AppCompatActivity implements TimePickerDia
 
     SQLite dbHelper = new SQLite(FilmEditActivity.this);
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_film_edit);
 
         id_film = getIntent().getIntExtra(ID_FILM, 0);

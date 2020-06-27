@@ -2,7 +2,9 @@ package com.wicak.projectuas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -17,10 +19,12 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputLayout layout_username;
     private TextInputLayout layout_password;
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
 

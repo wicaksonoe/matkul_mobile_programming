@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FilmEditActivity"></activity>
+        <activity android:name=".KursiPesanActivity" />
+        <activity android:name=".KursiMainActivity" />
+        <activity android:name=".FilmEditActivity" />
         <activity android:name=".FilmTambahActivity" />
         <activity android:name=".FilmDaftarActivity" />
         <activity android:name=".LoginActivity">

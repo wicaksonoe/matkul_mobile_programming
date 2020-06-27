@@ -7,9 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
@@ -26,9 +27,11 @@ public class FilmDaftarActivity extends AppCompatActivity {
 
     SQLite sqLite = new SQLite(FilmDaftarActivity.this);
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_daftar_film);
         getSupportActionBar().setTitle("Daftar Film");
 
@@ -73,7 +76,7 @@ public class FilmDaftarActivity extends AppCompatActivity {
     public void showRecyclerList() {
         // add all data to collection
         daftar.clear();
-        daftar.addAll(LoadDaftarFilm());
+        daftar.addAll(loadDaftarFilm());
 
         // set layout manager
         filmRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -127,7 +130,7 @@ public class FilmDaftarActivity extends AppCompatActivity {
         Toast.makeText(FilmDaftarActivity.this, "Data berhasil direfresh", Toast.LENGTH_SHORT).show();
     }
 
-    public ArrayList<Film> LoadDaftarFilm() {
+    public ArrayList<Film> loadDaftarFilm() {
         ArrayList<Film> results = new ArrayList<>();
         SQLiteDatabase db = sqLite.getReadableDatabase();
         Cursor cursor;

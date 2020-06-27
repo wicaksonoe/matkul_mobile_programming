@@ -1,23 +1,39 @@
 package com.wicak.projectuas;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    CardView btnManageSeat;
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
 
         setContentView(R.layout.activity_main);
+
+        btnManageSeat = findViewById(R.id.btn_manage_seat);
+
+        btnManageSeat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentKelolaKursi = new Intent(MainActivity.this, KursiMainActivity.class);
+                startActivity(intentKelolaKursi);
+            }
+        });
     }
 
     public void logout(View view) {
